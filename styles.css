@@ -27,13 +27,21 @@
 ******************* NAVBAR ***********************
 **************************************************/
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
-    height: 650px;
+    height: 100vh;
 }
 
 .store__section {
     padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
 
 #home {
     background-image: url('./img/logo.jpg');
@@ -54,6 +62,7 @@ nav.sticky{
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 10;
 }
 
 nav a {
@@ -240,4 +249,9 @@ header,
     justify-content: center;
     align-items: center;
     transition: .5s ease-in-out;
+}
+
+.btn-center {
+    margin-top: 1rem;
+    text-align: center;
 }
