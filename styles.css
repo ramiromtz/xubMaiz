@@ -135,10 +135,38 @@ header,
     width: 60px;
 }
 
-.credit__card {
+.credit__card:first-child {
     margin-top: 3rem;
     position: relative;
-    background-image: url('./img/bg.png');
+    background: linear-gradient(#e3aa0a, #afa900);
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.credit__card:nth-child(2) {
+    margin-top: 3rem;
+    position: relative;
+    background: linear-gradient(#bdbdbd, #636363);
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.credit__card:nth-child(3) {
+    margin-top: 3rem;
+    position: relative;
+    background: linear-gradient(#ececec, #fff7f7);
     background-size: cover;
     padding: 25px;
     border-radius: 28px;
@@ -159,6 +187,12 @@ header,
     color: #fff;
 }
 
+.credit__card:nth-child(3) h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #3f3f3f;
+}
+
 .credit__card h5.number {
     margin-top: 4px;
     font-size: 18px;
@@ -171,6 +205,12 @@ header,
 
 .credit__card h6 {
     color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.credit__card:nth-child(3) h6 {
+    color: #3f3f3f;
     font-size: 12px;
     font-weight: 400;
 }
@@ -199,5 +239,5 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;
+    transition: .5s ease-in-out;
 }
