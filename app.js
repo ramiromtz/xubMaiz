@@ -1,4 +1,5 @@
-const navbar = document.getElementById('navbar');
+const navbar = document.getElementById('navbar'),
+upArrow = document.querySelector('.up a');
 
 // Fixed navigation
 window.addEventListener('scroll', () => {
@@ -7,6 +8,11 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('sticky');
     }
+});
+
+// Arrow up
+window.addEventListener('scroll', () => {
+    window.scrollY >= 600 ? upArrow.style.display = "block" : upArrow.style.display = "none";
 });
 
 const sections = document.querySelectorAll('section[id]');
